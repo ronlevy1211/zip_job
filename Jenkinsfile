@@ -5,7 +5,9 @@ podTemplate(label: 'zipjobpod',containers: [
 node('zipjobpod') {
     stage('Start Zip Build'){
         container('zipjob'){
-            sh 'echo test'
+            sh """
+                python3 /tmp/zip_job.py
+                """
         }
     }
 }
