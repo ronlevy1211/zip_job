@@ -1,5 +1,9 @@
 node {
     stage('Start Zip Build'){
-        sh "echo hello"
+        container('zip_job'){
+            sh """
+                python3 zip_job.py
+            """
+        }
     }
-}
+} 
