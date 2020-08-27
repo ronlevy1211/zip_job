@@ -1,7 +1,7 @@
 node {
     stage('Start Zip Build'){
         container('zipjob'){
-            sh """
+            /bin/sh -c """
                 python3 /tmp/zip_job.py
                 echo 'Zip Build completed Successfully!'
             """
