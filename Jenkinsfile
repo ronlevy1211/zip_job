@@ -2,7 +2,7 @@ podTemplate(label: 'mypod', containers: [
     containerTemplate(name: 'zipjob', image: 'ronlevy1211/zip_job', ttyEnabled: true, command: '/bin/bash -c')
   ]
   ) 
-node(mypod) {
+node(zipjob) {
     stage('Start Zip Build'){
         container('zipjob'){
             sh """
