@@ -2,7 +2,7 @@ node {
     stage('Start Zip Build'){
         container('zipjob'){
             sh """
-                python3 zip_job.py
+                python3 /tmp/zip_job.py
             """
         }
     }
