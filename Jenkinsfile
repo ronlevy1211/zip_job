@@ -1,6 +1,6 @@
 node {
     stage('Start Zip Build'){
-        container('jnlp'){
+        container('zipjob'){
             sh 'echo test'
         }
     }
