@@ -6,6 +6,9 @@ node('zipjobpod') {
     stage('Start Zip Build'){
         container('zipjob'){
             sh """
+                ###################
+                ##START ZIP BUILD##
+                ###################
                 python3 /tmp/zip_job.py
                 """
         }
