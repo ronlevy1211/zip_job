@@ -2,7 +2,7 @@ podTemplate(label: 'zipjobpod',containers: [
     containerTemplate(name: 'zipjob', image: 'ronlevy1211/zip_job', ttyEnabled: true, command: 'cat')
   ],
   volumes: [
-    hostPathVolume(mountPath: '/tmp/zip/', hostPath: '/tmp/zip/')
+    hostPathVolume(mountPath: '/tmp/zip_builds', hostPath: '/tmp/zip_builds')
   ] 
   )
   {
