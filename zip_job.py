@@ -2,6 +2,10 @@ import sys
 import zipfile
 import os
 
+print("*******************")
+print("**START*ZIP*BUILD**")
+print("*******************")
+
 list = ['a','b','c','d']
 for name in list:
     try:
